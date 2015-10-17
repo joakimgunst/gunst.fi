@@ -1,0 +1,15 @@
+{
+  "name": "gunst.fi",
+  "version": "1.0.0",
+  "authors": [
+    "Joakim Gunst <joakim.gunst@gmail.com>"
+  ],
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
