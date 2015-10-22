@@ -1,10 +1,10 @@
 
 /* http://www.colourlovers.com/palette/625987/dont_you_go_down */
 
-body { border-top: 10px solid #94C7B6; margin-bottom: 50px; }
+body {  margin-bottom: 50px; }
 
-h1 { margin: 50px 0 30px; }
+h1 { margin: 30px 0; }
 h2 { margin-top: 30px; }
 
 .portrait { width: 200px; height: 200px; margin: 40px 0 20px 30px; }
-.portrait-xs { margin: 20px auto -20px; }
+.portrait-xs { margin: 0 auto; }
