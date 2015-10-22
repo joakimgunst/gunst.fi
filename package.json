@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "author": "Joakim Gunst <joakim.gunst@gmail.com>"
+  "author": "Joakim Gunst <joakim.gunst@gmail.com>",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
