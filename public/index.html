@@ -6,12 +6,12 @@
 		<title>Joakim Gunst</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="libs/bootstrap-custom/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 	</head>
-	<body>
+	
+	<body ng-app="app">
 		
-		<nav class="navbar navbar-default navbar-static-top">
+		<nav class="navbar navbar-default navbar-static-top" ng-controller="navbarCtrl">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -24,46 +24,15 @@
 			
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Curriculum vitae</a></li>
-						<li><a href="#">Ansioluettelo</a></li>
+						<li ng-class="{ active: isActive('/') }"><a href="#/">Curriculum vitae</a></li>
+						<li ng-class="{ active: isActive('/ansioluettelo') }"><a href="#/ansioluettelo">Ansioluettelo</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		
-		<div class="container">
-			
-			<img class="portrait portrait-xs hidden-print visible-xs" src="images/portrait.png" />
-			<img class="portrait hidden-print hidden-xs pull-right" src="images/portrait.png" />
-			<img class="portrait visible-print-block pull-right" src="images/portrait.png" />
-			
-			<h1>Curriculum vitae</h1>
-			
-			<p>I'm a user experience designer and software engineer with a passion for designing and developing products that are great for the customer – both valuable and easy to use. I believe that software is primarily a tool for solving people's real-world problems, and that the best way to do this is to combine technical expertise with an iterative process and a user-focused mindset.</p>
-			
-			<h2>
-				<i class="fa fa-suitcase"></i> Work experience
-			</h2>
-			
-			<div>
-				<h3>User Experience Designer</h3>
-				<h4><a href="http://www.rapal.fi/en/">Rapal Oy</a> <span class="text-muted margin-left">2006 – Present</span></h4>
-				<p>I design and prototype products before and during development – working with product management, users, developers and other stakeholders to produce and refine designs that satisfy the needs of the different groups. I also do web front-end development as part of an agile team.</p>
-			</div>
-			
-			<h2>
-				<i class="fa fa-graduation-cap"></i> Education
-			</h2>
-			
-			<div>
-				<h3>M.Sc. (Tech.)</h3>
-				<h4><a href="http://www.aalto.fi/en/">Aalto University</a> <span class="text-muted margin-left">2005 – 2012</span></h4>
-				<p>Computer Science and Engineering</p>
-			</div>
-		</div>
+		<div class="container" ng-view></div>
 		
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>
 </html>

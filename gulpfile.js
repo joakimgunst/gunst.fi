@@ -4,21 +4,31 @@ var minifyCss = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rimraf = require('gulp-rimraf');
+var sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
 	css: {
-		src: 'src/css/*.css',
+		src: [
+			'libs/bootstrap-custom/css/bootstrap.min.css',
+			'src/css/*.css'
+		],
 		dest: 'public/css'
 	},
 	js: {
-		src: 'src/js/*.js',
+		src: [
+			'bower_components/jquery/dist/jquery.min.js',
+			'bower_components/bootstrap/dist/js/bootstrap.min.js',
+			'bower_components/angular/angular.min.js',
+			'bower_components/angular-route/angular-route.min.js',
+			'src/js/*.js'
+		],
 		dest: 'public/js'
 	}
 };
 
 gulp.task('default', ['css', 'js'])
 
-gulp.task('watch', function() {
+gulp.task('watch', ['default'], function () {
 	gulp.watch(paths.css.src, ['css']);
 	gulp.watch(paths.js.src, ['js']);
 });
@@ -32,8 +42,10 @@ gulp.task('css', ['clean-css'], function () {
 
 gulp.task('js', ['clean-js'], function () {
 	return gulp.src(paths.js.src)
+		.pipe(sourcemaps.init({ loadMaps: true }))
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.js.dest))
 });
 
