@@ -9,12 +9,13 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var babelify = require('babelify');
+var less = require('gulp-less');
 
 var paths = {
 	css: {
 		src: [
 			'libs/bootstrap-custom/css/bootstrap.min.css',
-			'src/css/*.css'
+			'src/less/*.less'
 		],
 		dest: 'public/css'
 	},
@@ -33,21 +34,23 @@ gulp.task('watch', ['default'], function () {
 
 gulp.task('css', ['clean-css'], function () {
 	return gulp.src(paths.css.src)
+		.pipe(sourcemaps.init())
+  		.pipe(less())
 		.pipe(minifyCss())
-		.pipe(concat('main.min.css'))
+		.pipe(concat('build.css'))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.css.dest))
 });
 
 gulp.task('js', ['clean-js'], function () {
-
 	return browserify({ entries: './src/js/app.js', debug: true })
 		.transform(babelify)
 		.bundle()
-		.pipe(source('main.min.js'))
+		.pipe(source('build.js'))
 		.pipe(buffer())
 		.pipe(sourcemaps.init({ loadMaps: true }))
-		//.pipe(uglify())
-		.pipe(sourcemaps.write('./'))
+		.pipe(uglify())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.js.dest));
 });
 
