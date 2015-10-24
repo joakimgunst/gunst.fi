@@ -1,4 +1,3 @@
-
 var gulp = require('gulp');
 var minifyCss = require('gulp-minify-css');
 var concat = require('gulp-concat');
@@ -13,10 +12,7 @@ var less = require('gulp-less');
 
 var paths = {
 	css: {
-		src: [
-			'libs/bootstrap-custom/css/bootstrap.min.css',
-			'src/less/*.less'
-		],
+		src: 'src/less/*.less',
 		dest: 'public/css'
 	},
 	js: {
