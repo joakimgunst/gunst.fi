@@ -9,8 +9,3 @@ h1, h2 { margin-top: 30px; }
 
 .portrait { width: 200px; height: 200px; margin: 40px 0 20px 30px; }
 .portrait-xs { margin: 0 auto; }
-
-@media print {
-	.container { width: 800px;}
-	a[href]:after { content: ""; }
-}
