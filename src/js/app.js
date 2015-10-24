@@ -1,6 +1,10 @@
-/// <reference path="../../bower_components/angular/angular.min.js" />
 
-var app = angular.module('app', ['ngRoute']);
+// Boostrap requires jQuery to be defined globally
+window.jQuery = require('jquery')
+var bootstrap = require('bootstrap');
+var angular = require('angular');
+
+var app = angular.module('app', [ require('angular-route') ]);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -17,7 +21,5 @@ app.config(['$routeProvider',
   }]);
   
 app.controller('navbarCtrl', ['$scope', '$location', function ($scope, $location) {
-  $scope.isActive = function (viewLocation) { 
-        return viewLocation === $location.path();
-    };
+  $scope.isActive = viewLocation => viewLocation === $location.path();
 }])
