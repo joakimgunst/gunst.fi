@@ -1,0 +1,11 @@
+
+# Disable directory listing
+Options -Indexes
+
+# Redirect every url starting with www. to the equivalent without www.
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule .* http://%1%{REQUEST_URI} [R]
+
+# Custom 404
+ErrorDocument 404 /404.html
