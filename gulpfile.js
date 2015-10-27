@@ -9,6 +9,7 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var babelify = require('babelify');
 var less = require('gulp-less');
+var addSrc = require('gulp-add-src');
 
 var paths = {
 	css: {
@@ -44,7 +45,9 @@ gulp.task('js', ['clean-js'], function () {
 		.bundle()
 		.pipe(source('build.js'))
 		.pipe(buffer())
+    	.pipe(addSrc('./src/js/ga.js'))
 		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(concat('build.js'))
 		.pipe(uglify())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(paths.js.dest));
