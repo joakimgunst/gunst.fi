@@ -1,7 +1,7 @@
 {
-  "local": "public/",
-  "remote": "public_html/",
-  "host": "gunst.fi",
-  "user":"jgunst",
-  "pass":"bsUjxsEtih9y"
+  "local": "public",
+  "remote": "public_html",
+  "host": "whm19.louhi.net",
+  "user": "gunst",
+  "pass": "CVovh8tve%"
 }
