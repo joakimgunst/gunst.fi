@@ -9,3 +9,6 @@ RewriteRule .* http://%1%{REQUEST_URI} [R]
 
 # Custom 404
 ErrorDocument 404 /404.html
+
+# Redirects
+RedirectMatch 302 /iidajoakim https://adobe.ly/2gKowY2
