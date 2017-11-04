@@ -1,4 +1,5 @@
 var path = require("path");
+var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -32,6 +33,12 @@ module.exports = function(env) {
       new HtmlWebpackPlugin({
         template: "./src/index.html",
         hash: true
+      }),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+        Popper: ["popper.js", "default"]
       })
     ],
     resolve: {
@@ -46,9 +53,24 @@ module.exports = function(env) {
           loader: "ts-loader"
         },
         {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract({
-            use: "css-loader"
+          test: /\.(scss)$/,
+          use: ExtractTextPlugin.extract({
+            use: [
+              {
+                loader: "css-loader"
+              },
+              {
+                loader: "postcss-loader",
+                options: {
+                  plugins: function() {
+                    return [require("precss"), require("autoprefixer")];
+                  }
+                }
+              },
+              {
+                loader: "sass-loader"
+              }
+            ]
           })
         },
         {

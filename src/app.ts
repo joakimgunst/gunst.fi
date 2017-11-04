@@ -4,8 +4,11 @@ import "angular-route";
 import navbar from "./components/navbar";
 import cv from "./components/cv";
 
-import "less/main.less";
-import "less/print.less";
+// import "./bootstrap-custom/css/bootstrap.css";
+
+import "bootstrap/scss/bootstrap.scss";
+//import "./less/main.less";
+//import "./less/print.less";
 
 angular
   .module("app", ["ngRoute"])
