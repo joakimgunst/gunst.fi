@@ -10,14 +10,10 @@ h2 {
   margin-top: 30px;
 }
 h2 {
-  text-transform: uppercase;
+  font-family: "Alegreya Sans SC", sans-serif;
   letter-spacing: 1px;
   color: #78b5a1;
-  font-size: 22px;
-}
-
-a:hover {
-  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .margin-left {
@@ -47,21 +43,22 @@ a:hover {
   .portrait {
     width: 200px;
     height: 200px;
-    margin: 30px 0;
+  }
+}
+
+@media (min-width: $break-xl) {
+  .portrait {
+    width: 240px;
+    height: 240px;
   }
 }
 
 @media print {
   .container {
-    width: 800px;
+    width: 920px;
   }
-  a[href]:after {
-    content: "";
-  }
+  .navbar,
   .portrait {
-    width: 150px;
-    height: 150px;
-    float: right;
-    margin: 30px 0 30px 30px;
+    display: none;
   }
 }

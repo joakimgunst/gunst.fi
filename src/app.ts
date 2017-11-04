@@ -1,10 +1,10 @@
 import * as angular from "angular";
+import "bootstrap";
 
 import navbar from "./components/navbar";
 import cv from "./components/cv";
 
-import "bootstrap/scss/bootstrap.scss";
-import "./app.scss";
+import "./styles/main.scss";
 
 import "./js/ga.js";
 
