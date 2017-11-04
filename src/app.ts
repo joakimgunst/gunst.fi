@@ -29,10 +29,4 @@ angular
           redirectTo: "/404"
         });
     }
-  ])
-  .config([
-    "$locationProvider",
-    ($locationProvider: ng.ILocationProvider) => {
-      $locationProvider.html5Mode(true);
-    }
   ]);

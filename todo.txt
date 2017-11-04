@@ -1,8 +1,7 @@
 
 
 Todo:
-- React?
-- GA
-- 404
-- Google web
-- htaccess
+
+Maybe:
+- React
+- Html5 browser

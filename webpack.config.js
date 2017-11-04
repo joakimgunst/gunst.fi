@@ -19,8 +19,7 @@ module.exports = function(env) {
     stats: "minimal",
     devServer: {
       contentBase: false,
-      stats: "minimal",
-      historyApiFallback: true
+      stats: "minimal"
     },
     plugins: [
       new ExtractTextPlugin({

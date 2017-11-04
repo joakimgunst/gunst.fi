@@ -10,8 +10,3 @@ RewriteRule .* http://%1%{REQUEST_URI} [R]
 
 # Custom redirects
 RedirectMatch 302 /iidajoakim https://adobe.ly/2gKowY2
-
-# Redirect everything except static content to index.html
-RewriteCond %{REQUEST_URI} !^/index.html$
-RewriteCond %{REQUEST_URI} !\.(gif|jpeg|png|css|js)$
-RewriteRule .* /index.html [L,R=302]
