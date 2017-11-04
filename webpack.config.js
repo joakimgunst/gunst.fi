@@ -1,10 +1,11 @@
-var path = require("path");
-var webpack = require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+let path = require("path");
+let webpack = require("webpack");
+let ExtractTextPlugin = require("extract-text-webpack-plugin");
+let HtmlWebpackPlugin = require("html-webpack-plugin");
+let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = function(env) {
-  var production = env === "production";
+  let production = env === "production";
 
   return {
     entry: "./src/app.ts",
@@ -31,7 +32,8 @@ module.exports = function(env) {
         jQuery: "jquery",
         "window.jQuery": "jquery",
         Popper: ["popper.js", "default"]
-      })
+      }),
+      new FaviconsWebpackPlugin("./src/images/favicon.png")
     ],
     resolve: {
       modules: [path.resolve("node_modules")],

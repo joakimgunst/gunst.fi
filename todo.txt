@@ -1,7 +1,6 @@
 
 
 Todo:
-- Custom bootstrap styles
 - React?
 - GA
 - 404
@@ -9,4 +8,3 @@ Todo:
 - htaccess
 - files
     - https://www.npmjs.com/package/copy-webpack-plugin
-- favicons
