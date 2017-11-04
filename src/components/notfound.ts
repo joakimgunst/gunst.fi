@@ -1,4 +1,4 @@
-const template = require<string>("./navbar.html");
+const template = require<string>("./notfound.html");
 
 const component: ng.IComponentOptions = {
   template

@@ -3,12 +3,14 @@ let webpack = require("webpack");
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+let CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = function(env) {
   let production = env === "production";
 
   return {
-    entry: "./src/app.ts",
+    context: path.resolve(__dirname, "src"),
+    entry: "./app.ts",
     output: {
       path: path.resolve("build"),
       filename: "bundle.js"
@@ -17,14 +19,15 @@ module.exports = function(env) {
     stats: "minimal",
     devServer: {
       contentBase: false,
-      stats: "minimal"
+      stats: "minimal",
+      historyApiFallback: true
     },
     plugins: [
       new ExtractTextPlugin({
         filename: "bundle.css"
       }),
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "index.html",
         hash: true
       }),
       new webpack.ProvidePlugin({
@@ -33,7 +36,12 @@ module.exports = function(env) {
         "window.jQuery": "jquery",
         Popper: ["popper.js", "default"]
       }),
-      new FaviconsWebpackPlugin("./src/images/favicon.png")
+      new FaviconsWebpackPlugin("./images/favicon.png"),
+      new CopyWebpackPlugin([
+        { from: './.htaccess' },
+        { from: './google39d86b19602cfc3b.html' },
+        { from: './files/**/*' },
+      ])
     ],
     resolve: {
       modules: [path.resolve("node_modules")],
@@ -68,7 +76,7 @@ module.exports = function(env) {
           })
         },
         {
-          test: /\.png$/,
+          test: /\.(png|jpeg|gif)$/,
           loader: "file-loader"
         },
         {

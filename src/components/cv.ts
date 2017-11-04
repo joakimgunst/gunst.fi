@@ -1,7 +1,7 @@
-const html = require<string>("./cv.html");
+const template = require<string>("./cv.html");
 
 const component: ng.IComponentOptions = {
-  template: html
+  template
 };
 
 export default component;
