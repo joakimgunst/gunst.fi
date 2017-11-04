@@ -1,1 +1,12 @@
-- Add hashes to build files to bust caching
+
+
+Todo:
+- Custom bootstrap styles
+- React?
+- GA
+- 404
+- Google web
+- htaccess
+- files
+    - https://www.npmjs.com/package/copy-webpack-plugin
+- favicons

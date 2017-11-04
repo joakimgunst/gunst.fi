@@ -1,0 +1,67 @@
+// Color palette: http://www.colourlovers.com/palette/625987/dont_you_go_down
+
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+h1,
+h2 {
+  margin-top: 30px;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #78b5a1;
+  font-size: 22px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.navbar .fa {
+  margin-right: 2px;
+}
+
+.portrait {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+@media (min-width: $break-md) {
+  .portrait {
+    width: 150px;
+    height: 150px;
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: $break-lg) {
+  .portrait {
+    width: 200px;
+    height: 200px;
+    margin: 30px 0;
+  }
+}
+
+@media print {
+  .container {
+    width: 800px;
+  }
+  a[href]:after {
+    content: "";
+  }
+  .portrait {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin: 30px 0 30px 30px;
+  }
+}
