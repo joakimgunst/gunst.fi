@@ -1,5 +1,5 @@
 import React from 'react'
-import Link, { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 import portrait from '../images/portrait.png'
 
 const IndexPage = () => (

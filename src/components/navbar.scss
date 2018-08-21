@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+.navbar {
+  display: flex;
+  background: $primary-color;
+  padding: 0.5rem 0;
+  a {
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+  a:hover {
+    color: #fff;
+  }
+}
+
+.navbar-brand {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  a {
+    margin-left: 1rem;
+  }
+}

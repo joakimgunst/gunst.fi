@@ -1,16 +1,23 @@
+@import '../variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  color: #403b33;
+  color: $text-color;
   line-height: 1.5;
+  margin: 0 0 30px;
 }
 
 a {
-  color: #d3643b;
+  color: $secondary-color;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9e4523;
+  color: darken($secondary-color, 10);
   text-decoration: none;
 }
 
@@ -31,7 +38,7 @@ h1 {
 h2 {
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 1px;
-  color: #78b5a1;
+  color: $primary-color;
   font-size: 1.5rem;
 }
 
@@ -42,14 +49,17 @@ h3 {
 h4 {
   font-size: 1.5rem;
   .year-range {
-    color: #868e96;
+    color: $muted-color;
     margin-left: 0.5rem;
   }
 }
 
 .container {
-  max-width: 1140px;
+  width: 100%;
+  display: flex;
   margin: 0 auto;
+  padding: 0 15px;
+  max-width: 900px;
 }
 
 .portrait {
