@@ -4,7 +4,7 @@ import './navbar.scss'
 
 const Navbar = () => (
   <nav className="navbar">
-    <div className="container">
+    <div className="navbar-inner">
       <Link to="/" className="navbar-brand">
         Joakim Gunst
       </Link>
