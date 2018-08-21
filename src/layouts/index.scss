@@ -1,0 +1,60 @@
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #403b33;
+  line-height: 1.5;
+}
+
+a {
+  color: #d3643b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9e4523;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 1px;
+  color: #78b5a1;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  .year-range {
+    color: #868e96;
+    margin-left: 0.5rem;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.portrait {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto 0;
+}

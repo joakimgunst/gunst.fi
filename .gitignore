@@ -1,5 +1,4 @@
 node_modules/
 build/
-
-public/js/
-public/css/
+.cache/
+public/
