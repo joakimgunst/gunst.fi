@@ -1,5 +1,5 @@
-bower_components
-node_modules
+node_modules/
+build/
 
-public/js
-public/css
+public/js/
+public/css/
