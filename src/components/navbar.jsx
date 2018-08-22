@@ -1,19 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import './navbar.scss'
+import styles from './navbar.module.scss'
+
+console.log(styles)
 
 const Navbar = () => (
-  <nav className="navbar">
-    <div className="navbar-inner">
-      <Link to="/" className="navbar-brand">
+  <nav className={styles.navbar}>
+    <div className={styles.navbarInner}>
+      <Link to="/" className={styles.navbarBrand}>
         Joakim Gunst
       </Link>
 
-      <div className="navbar-links">
-        <a className="nav-link" href="mailto:joakim.gunst@gmail.com">
+      <div className={styles.navbarLinks}>
+        <a href="mailto:joakim.gunst@gmail.com">
           <i className="fa fa-envelope-square" /> Email
         </a>
-        <a className="nav-link" href="https://fi.linkedin.com/in/joakimgunst">
+        <a href="https://fi.linkedin.com/in/joakimgunst">
           <i className="fa fa-linkedin-square" /> LinkedIn
         </a>
       </div>

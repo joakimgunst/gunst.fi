@@ -1,11 +1,12 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 import portrait from '../images/portrait.png'
+import styles from './index.module.scss'
 
 const IndexPage = () => (
-  <div className="container">
+  <div className={styles.container}>
     <aside>
-      <img className="portrait" src={portrait} />
+      <img className={styles.portrait} src={portrait} />
     </aside>
     <main>
       <h1>Curriculum vitae</h1>
@@ -24,7 +25,7 @@ const IndexPage = () => (
         <h3>User Experience Designer</h3>
         <h4>
           <a href="https://www.rapal.com">Rapal Oy</a>
-          <span className="year-range">2007 – Present</span>
+          <span className={styles.yearRange}>2007 – Present</span>
         </h4>
 
         <p>
@@ -79,7 +80,7 @@ const IndexPage = () => (
         <h3>Master of Science (Tech.)</h3>
         <h4>
           <a href="http://www.aalto.fi/en/">Aalto University</a>
-          <span className="year-range">2005 – 2012</span>
+          <span className={styles.yearRange}>2005 – 2012</span>
         </h4>
 
         <p>
