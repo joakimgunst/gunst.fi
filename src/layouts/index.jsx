@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.scss'
+import '../styles/base.scss'
 import Navbar from '../components/navbar'
 import Helmet from 'react-helmet'
 import 'font-awesome/css/font-awesome.css'

@@ -1,23 +1,15 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 import portrait from '../images/portrait.png'
-import styles from './index.module.scss'
+import styles from '../styles/page.module.scss'
 
-const IndexPage = () => (
+const Page = () => (
   <div className={styles.container}>
     <aside>
       <img className={styles.portrait} src={portrait} />
     </aside>
     <main>
       <h1>Curriculum vitae</h1>
-
-      <p>
-        My name is <b>Joakim Gunst</b> and I'm a user experience designer and
-        front-end developer. My passion is to create products that solve
-        important real-world problems while being delightful to use. I believe
-        that a constant focus on end users, technical expertise and an iterative
-        process is the best way to achieve this.
-      </p>
 
       <h2>Work experience</h2>
 
@@ -125,4 +117,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+export default Page

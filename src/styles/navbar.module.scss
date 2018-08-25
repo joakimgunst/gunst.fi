@@ -1,0 +1,42 @@
+@import './common.scss';
+
+.navbar {
+  background: $primary-color;
+  padding: 10px 0;
+}
+
+.navbarInner {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 16px 0 20px;
+  max-width: 1000px;
+  display: flex;
+  align-items: baseline;
+}
+
+.navbarBrand {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  margin-right: 10px;
+  color: #fff !important;
+  @include breakpoint(iphone6) {
+    font-size: 1.25rem;
+  }
+}
+
+.link {
+  padding: 0 5px;
+  color: hsla(0, 0%, 100%, 0.8);
+  &:hover {
+    color: #fff;
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+
+.activeLink {
+  font-weight: bold;
+  color: #fff;
+}

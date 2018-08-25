@@ -10,3 +10,8 @@ RewriteRule .* http://%1%{REQUEST_URI} [R]
 
 # Custom redirects
 RedirectMatch 302 /iidajoakim https://adobe.ly/2gKowY2
+
+# Rewrite everything that doesn't match a file or directory to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
