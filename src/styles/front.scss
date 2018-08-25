@@ -17,17 +17,17 @@
 .front-name {
   text-align: center;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5em;
   @include breakpoint(sm) {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   @include breakpoint(md) {
-    font-size: 6em;
+    font-size: 5em;
   }
 }
 
 .front-links {
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: italic;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
     flex-direction: row;
   }
   @include breakpoint(md) {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 

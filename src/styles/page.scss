@@ -24,11 +24,11 @@
 }
 
 .page-main {
-  padding: 30px;
-  max-width: 960px;
+  padding: 20px;
   @include breakpoint(md) {
     flex: 1 0 62%;
     overflow: auto;
+    padding: 30px;
   }
   h3 {
     display: flex;
