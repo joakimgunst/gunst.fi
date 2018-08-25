@@ -1,24 +1,24 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
-import portrait from '../images/portrait.png'
-import styles from '../styles/page.module.scss'
+import Navbar from '../components/navbar'
+import '../styles/page.scss'
 
 const Page = () => (
-  <div className={styles.container}>
-    <aside>
-      <img className={styles.portrait} src={portrait} />
+  <div className="page-wrapper">
+    <aside className="page-aside">
+      <Navbar />
     </aside>
-    <main>
+    <main className="page-main">
       <h1>Ansioluettelo</h1>
 
       <h2>Työkokemus</h2>
 
       <div>
         <h3>User Experience Designer</h3>
-        <h4>
+        <h3>
           <a href="https://www.rapal.com">Rapal Oy</a>
-          <span className={styles.yearRange}>2007 –</span>
-        </h4>
+          <span>2007 –</span>
+        </h3>
 
         <p>
           Olen ollut täysipäiväisesti töissä Rapalilla valmistumisestani lähtien
@@ -70,10 +70,10 @@ const Page = () => (
 
       <div>
         <h3>Diplomi-insinööri</h3>
-        <h4>
+        <h3>
           <a href="http://www.aalto.fi/en/">Aalto-yliopisto</a>
-          <span className={styles.yearRange}>2005 – 2012</span>
-        </h4>
+          <span>2005 – 2012</span>
+        </h3>
 
         <p>
           Valmistuin diplomi-insinööriksi maininnalla erinomainen vuonna 2012
@@ -109,10 +109,10 @@ const Page = () => (
       <h2>Kielet</h2>
 
       <ul>
-        <li>Finnish – erinomainen</li>
-        <li>English – erinomainen</li>
-        <li>Swedish – erinomainen</li>
-        <li>German – perusteet</li>
+        <li>Suomi – erinomainen</li>
+        <li>Englanti – erinomainen</li>
+        <li>Ruotsi – erinomainen</li>
+        <li>Saksa – perusteet</li>
       </ul>
     </main>
   </div>

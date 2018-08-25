@@ -1,21 +1,17 @@
-$primary-color: #78b5a1;
-$secondary-color: #d3643b;
+$link-color: #ef8d69;
 $text-color: #403b33;
-$muted-color: #868e96;
+$muted-color: #999;
+$background-color: #4b4e50;
+$transparent-white: rgba(255, 255, 255, 0.8);
 
 @mixin breakpoint($point) {
-  @if $point == iphone6 {
-    @media (max-width: 375px) {
+  @if $point == sm {
+    @media (min-width: 576px) {
       @content;
     }
   }
-  @if $point == mobile {
-    @media (max-width: 768px) {
-      @content;
-    }
-  }
-  @if $point == nonmobile {
-    @media (min-width: 769px) {
+  @if $point == md {
+    @media (min-width: 768px) {
       @content;
     }
   }

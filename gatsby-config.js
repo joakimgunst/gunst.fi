@@ -5,10 +5,11 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Alegreya Sans:400,700', 'Alegreya Sans SC']
+        fonts: ['Alegreya Sans:400,400i,500,700']
       }
     },
     {
