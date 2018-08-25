@@ -17,7 +17,7 @@ const Page = () => (
         <h3>User Experience Designer</h3>
         <h4>
           <a href="https://www.rapal.com">Rapal Oy</a>
-          <span className={styles.yearRange}>2007 – Present</span>
+          <span className={styles.yearRange}>2007 –</span>
         </h4>
 
         <p>
