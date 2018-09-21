@@ -2,10 +2,12 @@ import React from 'react'
 import { withPrefix } from 'gatsby-link'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
+import Helmet from 'react-helmet'
 import '../styles/page.scss'
 
 const Page = () => (
   <Layout>
+    <Helmet title="CV" />
     <div className="page-wrapper">
       <aside className="page-aside">
         <Navbar />

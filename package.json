@@ -2,7 +2,7 @@
   "name": "gunst.fi",
   "version": "1.0.0",
   "private": true,
-  "description": "Personal and professional web site for Joakim Gunst.",
+  "description": "Personal and professional web site for Joakim Gunst",
   "author": "Joakim Gunst <joakim.gunst@gmail.com>",
   "scripts": {
     "build": "gatsby build",
