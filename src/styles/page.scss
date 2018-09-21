@@ -21,6 +21,10 @@
     flex: 1 0 38%;
     background-position: center;
   }
+
+  @media print {
+    display: none;
+  }
 }
 
 .page-main {

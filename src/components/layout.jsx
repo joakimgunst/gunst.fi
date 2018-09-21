@@ -9,6 +9,6 @@ export default ({ children }) => (
       title="Joakim Gunst"
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
     />
-    {children()}
+    {children}
   </div>
 )

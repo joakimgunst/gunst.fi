@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styles from '../styles/navbar.scss'
+import '../styles/navbar.scss'
 
 const Navbar = () => (
   <nav className="navbar">
@@ -9,12 +9,7 @@ const Navbar = () => (
         Joakim Gunst
       </Link>
 
-      <Link
-        className="navbar-link"
-        activeClassName="active"
-        to="/cv"
-        exact={true}
-      >
+      <Link className="navbar-link" activeClassName="active" to="/cv">
         CV
       </Link>
 
