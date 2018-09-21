@@ -49,3 +49,7 @@ RewriteRule . /index.html [L]
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+  Header set Cache-Control "public,max-age=31536000,immutable"
+</filesMatch>
