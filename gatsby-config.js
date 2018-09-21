@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Joakim Gunst'
+    title: 'Joakim Gunst',
+    siteUrl: 'http://gunst.fi'
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-svg',
