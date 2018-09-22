@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import '../styles/front.scss'
-import MailIcon from '../images/envelope-square-solid.svg'
-import LinkedInIcon from '../images/linkedin-brands.svg'
+import mailIcon from '../images/envelope-square-solid.svg'
+import linkedInIcon from '../images/linkedin-brands.svg'
 import Layout from '../components/layout'
 
 const Page = () => (
@@ -21,11 +21,11 @@ const Page = () => (
 
       <div className="front-icons">
         <a className="front-icon" href="mailto:joakim.gunst@gmail.com">
-          <MailIcon />
+          <img src={mailIcon} alt="Email" />
         </a>
 
         <a className="front-icon" href="https://fi.linkedin.com/in/joakimgunst">
-          <LinkedInIcon />
+          <img src={linkedInIcon} alt="LinkedIn" />
         </a>
       </div>
 

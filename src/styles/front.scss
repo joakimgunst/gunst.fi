@@ -58,19 +58,19 @@
 }
 
 .front-icon {
-  svg {
-    color: $transparent-white;
+  img {
     width: 40px;
     height: 40px;
     margin: 5px;
+    opacity: 0.8;
     @include breakpoint(md) {
       width: 50px;
       height: 50px;
     }
   }
 
-  svg:hover {
-    color: #fff;
+  img:hover {
+    opacity: 1;
   }
 }
 

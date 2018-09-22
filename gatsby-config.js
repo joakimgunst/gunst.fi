@@ -8,7 +8,6 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    'gatsby-plugin-react-svg',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
