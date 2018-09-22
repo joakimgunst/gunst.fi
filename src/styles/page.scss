@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
 
-  @include breakpoint(md) {
+  @include breakpoint(tablet) {
     display: flex;
   }
 }
@@ -12,14 +12,19 @@
 .page-aside {
   height: 240px;
   background-color: $background-color;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background-1600.jpg);
   background-size: cover;
   background-position: top center;
 
-  @include breakpoint(md) {
+  @include breakpoint(tablet) {
     height: auto;
     flex: 1 0 38%;
     background-position: center;
+    background-image: url(../images/background-2400.jpg);
+  }
+
+  @include breakpoint(widescreen) {
+    background-image: url(../images/background-4800.jpg);
   }
 
   @media print {
@@ -29,7 +34,7 @@
 
 .page-main {
   padding: 20px;
-  @include breakpoint(md) {
+  @include breakpoint(tablet) {
     flex: 1 0 62%;
     overflow: auto;
     padding: 30px;
