@@ -24,12 +24,7 @@ const Page = () => (
           <MailIcon />
         </a>
 
-        <a
-          className="front-icon"
-          href="https://fi.linkedin.com/in/joakimgunst"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="front-icon" href="https://fi.linkedin.com/in/joakimgunst">
           <LinkedInIcon />
         </a>
       </div>

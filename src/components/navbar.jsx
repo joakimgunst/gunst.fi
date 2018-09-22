@@ -21,16 +21,6 @@ const Navbar = () => (
       >
         Ansioluettelo
       </Link>
-
-      {/* <a className={styles.link} href="mailto:joakim.gunst@gmail.com">
-        <i className="fa fa-envelope-square" />
-        <span className="mobile-hide">Email</span>
-      </a>
-
-      <a className={styles.link} href="https://fi.linkedin.com/in/joakimgunst">
-        <i className="fa fa-linkedin-square" />
-        <span className="mobile-hide">LinkedIn</span>
-      </a> */}
     </div>
   </nav>
 )
