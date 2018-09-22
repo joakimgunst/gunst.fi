@@ -1,0 +1,18 @@
+$link-color: #ef8d69;
+$text-color: #403b33;
+$muted-color: #999;
+$background-color: #4b4e50;
+$transparent-white: rgba(255, 255, 255, 0.8);
+
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  @if $point == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}

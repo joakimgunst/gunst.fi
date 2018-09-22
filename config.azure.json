@@ -1,7 +1,0 @@
-{
-  "local": "public/",
-  "remote": "site/wwwroot/",
-  "host": "waws-prod-db3-033.ftp.azurewebsites.windows.net",
-  "user": "gunst\\jgunst",
-  "pass": "sNNbVJxOonicGWtv"
-}
