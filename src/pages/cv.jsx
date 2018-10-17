@@ -18,18 +18,30 @@ const Page = () => (
         <h2>Work experience</h2>
 
         <div>
-          <h3>User Experience Designer</h3>
+          <h3>Senior Software Developer</h3>
           <h3>
-            <a href="https://www.rapal.com">Rapal Oy</a>
-            <span>2007 – Present</span>
+            <a href="https://www.nitor.com/">Nitor</a>
+            <span>10/2018 –</span>
           </h3>
 
           <p>
-            I have been working full time at Rapal since I graduated in 2012.
-            Although my title is UX designer, my work has consisted of about
-            equal parts of UX design and web front- end development. I have been
-            responsible for the user experience in tens of development projects
-            over the years.
+            In the fall of 2018, I started working at Nitor as a frontend
+            developer. I work as a consultant in customer projects.
+          </p>
+        </div>
+
+        <div>
+          <h3>User Experience Designer</h3>
+          <h3>
+            <a href="https://www.rapal.com">Rapal</a>
+            <span>2007 – 10/2018</span>
+          </h3>
+
+          <p>
+            I worked full time at Rapal since I graduated in 2012. Although my
+            title was UX designer, my work consisted of about equal parts of UX
+            design and web frontend development. I have been responsible for the
+            user experience in tens of development projects over the years.
           </p>
 
           <p>

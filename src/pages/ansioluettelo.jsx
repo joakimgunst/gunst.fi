@@ -20,18 +20,31 @@ const Page = () => (
         <h2>Työkokemus</h2>
 
         <div>
-          <h3>User Experience Designer</h3>
+          <h3>Senior Software Developer</h3>
           <h3>
-            <a href="https://www.rapal.com">Rapal Oy</a>
-            <span>2007 –</span>
+            <a href="https://www.nitor.com/">Nitor</a>
+            <span>10/2018 –</span>
           </h3>
 
           <p>
-            Olen ollut täysipäiväisesti töissä Rapalilla valmistumisestani
-            lähtien vuodesta 2012. Tittelini on UX designer, mutta työni on
-            koostunut tasapuolisesti sekä UX-suunnittelusta että
-            front-end-kehityksestä. Vuosien varrella olen ollut vastuussa
-            käyttökokemuksesta kymmenissä kehitysprojekteissa.
+            Syksyllä 2018 aloitin frontend-kehittäjänä Nitorilla. Toimin
+            konsulttina asiakasprojekteissa.
+          </p>
+        </div>
+
+        <div>
+          <h3>User Experience Designer</h3>
+          <h3>
+            <a href="https://www.rapal.com">Rapal</a>
+            <span>2007 – 10/2018</span>
+          </h3>
+
+          <p>
+            Olin täysipäiväisesti töissä Rapalilla valmistumisestani lähtien
+            vuodesta 2012. Tittelini oli UX designer, mutta työni on koostunut
+            tasapuolisesti sekä UX-suunnittelusta että frontend-kehityksestä.
+            Vuosien varrella olen ollut vastuussa käyttökokemuksesta kymmenissä
+            kehitysprojekteissa.
           </p>
 
           <p>
