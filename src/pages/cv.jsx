@@ -25,8 +25,11 @@ const Page = () => (
           </h3>
 
           <p>
-            In the fall of 2018, I started working at Nitor as a frontend
-            developer. I work as a consultant in customer projects.
+            I’m working as a consultant, developing high-quality software for
+            our customers. My current project is a modern ecommerce site, where
+            I focus mainly on frontend development. Among the technologies used
+            are TypeScript, React, Redux, Webpack, PostCSS, Java, Spring and
+            AWS.
           </p>
         </div>
 

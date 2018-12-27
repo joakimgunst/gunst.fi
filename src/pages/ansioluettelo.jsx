@@ -27,8 +27,10 @@ const Page = () => (
           </h3>
 
           <p>
-            Syksyllä 2018 aloitin frontend-kehittäjänä Nitorilla. Toimin
-            konsulttina asiakasprojekteissa.
+            Konsulttina kehitän korkealaatuisia ohjelmistoja asiakkaillemme.
+            Tämänhetkinen projektini on moderni verkkokauppa, missä keskityn
+            ensisijaisesti frontend-kehitykseen. Käytetyt teknologiat ovat mm.
+            TypeScript, React, Redux, Webpack, PostCSS, Java, Spring ja AWS.
           </p>
         </div>
 
