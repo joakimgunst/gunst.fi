@@ -14,9 +14,6 @@ const Page = () => (
         <Link className="front-link" to="/cv">
           Curriculum vitae
         </Link>
-        <Link className="front-link" to="/ansioluettelo">
-          Ansioluettelo
-        </Link>
       </div>
 
       <div className="front-icons">

@@ -18,115 +18,86 @@ const Page = () => (
         <h2>Work experience</h2>
 
         <div>
-          <h3>Senior Software Developer</h3>
           <h3>
             <a href="https://www.nitor.com/">Nitor</a>
-            <span>10/2018 –</span>
           </h3>
+          <h4>
+            Senior Software Developer
+            <span>10/2018 –</span>
+          </h4>
 
           <p>
-            I’m working as a consultant, developing high-quality software for
-            our customers. My current project is a modern ecommerce site, where
-            I focus mainly on frontend development. Among the technologies used
-            are TypeScript, React, Redux, Webpack, PostCSS, Java, Spring and
-            AWS.
+            I’m working as a consultant, developing quality software for our
+            customers. My current project is a modern ecommerce site, where I
+            focus primarily on frontend development, but also collaborate with
+            designers in improving the UX and visual design of the site. Among
+            the technologies used are TypeScript, React, Redux, Webpack,
+            PostCSS, Java, Spring and AWS.
           </p>
         </div>
 
         <div>
-          <h3>User Experience Designer</h3>
           <h3>
             <a href="https://www.rapal.com">Rapal</a>
-            <span>2007 – 10/2018</span>
           </h3>
+          <h4>
+            User Experience Designer
+            <span>4/2012 – 10/2018</span>
+          </h4>
 
           <p>
-            I worked full time at Rapal since I graduated in 2012. Although my
-            title was UX designer, my work consisted of about equal parts of UX
-            design and web frontend development. I have been responsible for the
-            user experience in tens of development projects over the years.
+            I started working full time after I graduated in 2012. My title was
+            UX designer, but my work consisted of both UX design and web
+            frontend development in about equal parts. As a designer, I arranged
+            close to one hundred user interviews and usability tests. I did
+            visual design, created mockups and prototypes, and supported product
+            management in writing user stories. As a developer, I was partly or
+            fully responsible for the front end in several web applications. I
+            got very experienced with JavaScript, HTML and CSS, and used
+            frameworks like Angular and React to create modern, responsive
+            single-page applications. I also did some backend development with
+            C# and ASP.NET. I worked as part of an agile team, so I got familiar
+            with practices like refactoring, unit testing, code reviews,
+            continuous integration and agile planning.
           </p>
 
-          <p>
-            As a <b>front-end developer</b>, I have extensive experience with
-            HTML, CSS, JavaScript, HTTP and browsers. I have created multiple
-            modern and responsive web apps with advanced UIs including graphical
-            floor plans, charts, maps and other ways of visualizing data, always
-            balancing ease of use with performance for users that depend on the
-            apps for daily work.
-          </p>
+          <h4>
+            Software Developer
+            <span>5/2007 – 3/2012</span>
+          </h4>
 
           <p>
-            During the past few years, I have been working e.g. with the
-            following technologies: React, Redux, Angular (1.x and 2+),
-            TypeScript, Bootstrap, Webpack, SVG, Sass and Jest. I am very
-            familiar with version control (Git), CI (TeamCity), and many JS
-            libraries (e.g. Lodash, Moment.js, Highcharts and Leaflet). Although
-            my focus has been on the front-end, I have also done C# back-end
-            development with .NET and EF, including .NET Core, and designed
-            several REST APIs. I also have some experience with React Native and
-            mobile development.
-          </p>
-
-          <p>
-            As a <b>UX designer</b>, I have arranged close to one hundred user
-            interviews, usability tests and workshops to learn about user needs
-            and test my designs. I have created mockups and prototypes for web
-            and mobile apps, written user stories and other specs, and created
-            visual designs with Photoshop. I am competent with responsive design
-            and patterns used in modern web applications. I also know how to
-            analyze user behavior with Google Analytics.
-          </p>
-
-          <p>
-            I have been working as part of multiple <b>agile teams</b> and I am
-            very familiar with practices such as incremental development, unit
-            testing, code reviews, continuous integration, agile planning and
-            retrospectives.
+            I worked part time as a software developer with a focus on user
+            interface design and frontend development. My tools were primarily
+            HTML and CSS, but I also did some JavaScript development.
           </p>
         </div>
 
         <h2>Education</h2>
 
         <div>
-          <h3>Master of Science (Tech.)</h3>
           <h3>
             <a href="http://www.aalto.fi/en/">Aalto University</a>
-            <span>2005 – 2012</span>
           </h3>
+          <h4>
+            Master of Science (Tech.)
+            <span>2005 – 2012</span>
+          </h4>
 
           <p>
-            I graduated with distinction in 2012 with my master in Computer
-            Science and Engineering. My major was in media technology with a
-            focus on user interfaces and usability. I wrote my master's thesis
-            about{' '}
+            I graduated with distinction with my master in Computer Science and
+            Engineering. My major was in media technology with a focus on user
+            interfaces and usability. I wrote my{' '}
             <a
               href={withPrefix('files/thesis.pdf')}
               target="_blank"
               rel="noopener noreferrer"
             >
-              interaction design in agile software development
-            </a>
-            . My bachelor was in Automation and Systems Technology. In 2008, I
-            organized a preparation course for students applying to Aalto
-            University.
-          </p>
-        </div>
-
-        <h2>Volunteering</h2>
-
-        <div>
-          <h3>Scouting</h3>
-
-          <p>
-            I am secretary in our scout group Munksnäs Spejarna and have been
-            the main organizer of multiple camps and other events. In 2014, I
-            was the vice chief for Atlantis, a one-week scout camp with almost
-            2000 participants. Over 200 adults were involved in the planning
-            phase and over 600 had assignments during the camp. I learned how to
-            set up goals, build and lead a project team, and work efficiently in
-            a distributed organization. The camp was very successful, with a 4.3
-            rating (1–5) in a survey with more than 500 responses.
+              master's thesis
+            </a>{' '}
+            on interaction design in agile software development. My bachelor was
+            in Automation and Systems Technology. I also did a special module in
+            bioengineering.
           </p>
         </div>
 

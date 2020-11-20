@@ -12,15 +12,6 @@ const Navbar = () => (
       <Link className="navbar-link" activeClassName="active" to="/cv">
         CV
       </Link>
-
-      <Link
-        className="navbar-link"
-        activeClassName="active"
-        style={{ marginRight: 'auto' }}
-        to="/ansioluettelo"
-      >
-        Ansioluettelo
-      </Link>
     </div>
   </nav>
 )
