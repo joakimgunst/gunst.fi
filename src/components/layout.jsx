@@ -3,7 +3,7 @@ import '../styles/base.scss'
 import Helmet from 'react-helmet'
 import favicon from '../images/favicon.png'
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet
       defaultTitle="Joakim Gunst"
@@ -19,3 +19,5 @@ export default ({ children }) => (
     {children}
   </div>
 )
+
+export default Layout
