@@ -45,7 +45,7 @@ const Page = () => (
             <a href="https://www.rapal.com">Rapal</a>
           </h3>
           <h4>
-            Software Developer & UX Designer
+            Developer & Designer
             <span>5/2007 – 10/2018</span>
           </h4>
 
