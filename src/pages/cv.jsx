@@ -3,7 +3,7 @@ import { withPrefix } from 'gatsby-link'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import '../styles/page.scss'
+import '../styles/page.css'
 
 const Page = () => (
   <Layout>

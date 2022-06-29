@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import '../styles/front.scss'
+import '../styles/front.css'
 import mailIcon from '../images/envelope-square-solid.svg'
 import linkedInIcon from '../images/linkedin-brands.svg'
 import Layout from '../components/layout'

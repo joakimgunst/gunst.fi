@@ -1,4 +1,11 @@
-@import './common.scss';
+:root {
+  --link-color: #ef8d69;
+  --link-color-hover: #ea6a3b;
+  --text-color: #403b33;
+  --muted-color: #999;
+  --background-color: #4b4e50;
+  --transparent-white: rgba(255, 255, 255, 0.8);
+}
 
 * {
   box-sizing: border-box;
@@ -7,22 +14,22 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 17px;
-  color: $text-color;
+  color: var(--text-color);
   line-height: 1.5;
   margin: 0;
 
-  @include breakpoint(tablet) {
+  @media (min-width: 768px) {
     font-size: 18px;
   }
 }
 
 a {
-  color: $link-color;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: darken($link-color, 10);
+  color: var(--link-color-hover);
   text-decoration: none;
 }
 
@@ -41,31 +48,35 @@ h4 {
 
 h1 {
   font-size: 2rem;
-  @include breakpoint(tablet) {
+
+  @media (min-width: 768px) {
     font-size: 2.5rem;
   }
 }
 
 h2 {
   margin: 1em 0 0.5em;
-  color: $muted-color;
+  color: var(--muted-color);
   font-style: italic;
   font-size: 1.5rem;
-  @include breakpoint(tablet) {
+
+  @media (min-width: 768px) {
     font-size: 2rem;
   }
 }
 
 h3 {
   font-size: 1.375rem;
-  @include breakpoint(tablet) {
+
+  @media (min-width: 768px) {
     font-size: 1.75rem;
   }
 }
 
 h4 {
   font-size: 1.25rem;
-  @include breakpoint(tablet) {
+
+  @media (min-width: 768px) {
     font-size: 1.5rem;
   }
 }
