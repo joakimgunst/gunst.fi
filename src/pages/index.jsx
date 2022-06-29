@@ -25,10 +25,6 @@ const Page = () => (
           <img src={linkedInIcon} alt="LinkedIn" />
         </a>
       </div>
-
-      <div className="front-attribution">
-        Using <a href="https://fontawesome.com/license/free">Font Awesome</a>
-      </div>
     </div>
   </Layout>
 )
