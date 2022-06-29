@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import '../styles/base.scss'
-import '../styles/skiapp.scss'
+import '../styles/base.css'
+import '../styles/skiapp.css'
 
 const Page = () => (
   <div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/base.scss'
+import '../styles/base.css'
 import Helmet from 'react-helmet'
 import favicon from '../images/favicon.png'
 

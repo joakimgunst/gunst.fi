@@ -1,13 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: 'Joakim Gunst',
-    siteUrl: 'http://gunst.fi'
+    siteUrl: 'http://gunst.fi',
   },
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,21 +22,21 @@ module.exports = {
         background_color: `#4b4e50`,
         theme_color: `#4b4e50`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`
-      }
+        icon: `src/images/favicon.png`,
+      },
     },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['Alegreya Sans:400,400i,500,700']
-      }
+        fonts: ['Alegreya Sans:400,400i,500,700'],
+      },
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-1562738-18'
-      }
-    }
-  ]
+        trackingId: 'UA-1562738-18',
+      },
+    },
+  ],
 }
