@@ -28,15 +28,15 @@ const Page = () => (
 
           <p>
             I’m working as a consultant, developing quality software for our
-            customers. My work has involved developing large-scale web
-            applications and e-commerce sites for several customers. Although
-            skilled as a full-stack developer, I’m most interested in the front
-            end and have often adopted a frontend architect role in the team. My
-            design background has helped me collaborate with designers in
-            creating excellent user experiences. I have used technologies
-            including JavaScript, TypeScript, React, Node.js, Next.js, Java,
-            Spring Boot, PostgreSQL, and AWS. Internally at Nitor, I have
-            founded Frontend Forum, a regular event to share frontend expertise.
+            clients. My work has involved large-scale web applications and
+            e-commerce sites. Although skilled as a full-stack developer, I’m
+            most interested in the front end and have often adopted a frontend
+            architect role in the team. My design background has helped me
+            collaborate with designers in creating excellent user experiences. I
+            have used technologies including JavaScript, TypeScript, React,
+            Node.js, Next.js, Java, Spring Boot, PostgreSQL, and AWS. Internally
+            at Nitor, I have founded Frontend Forum, a regular event to share
+            frontend expertise.
           </p>
         </div>
 
