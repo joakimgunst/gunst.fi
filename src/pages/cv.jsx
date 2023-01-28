@@ -1,5 +1,5 @@
 import React from 'react'
-import { withPrefix } from 'gatsby-link'
+import { withPrefix } from 'gatsby'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'

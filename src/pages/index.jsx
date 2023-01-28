@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import '../styles/front.css'
 import mailIcon from '../images/envelope-square-solid.svg'
 import linkedInIcon from '../images/linkedin-brands.svg'
