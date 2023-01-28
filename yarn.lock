@@ -5617,7 +5617,7 @@ gatsby-legacy-polyfills@^3.5.0:
     "@babel/runtime" "^7.20.7"
     core-js-compat "3.9.0"
 
-gatsby-link@5.5.0, gatsby-link@^5.5.0:
+gatsby-link@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-5.5.0.tgz#2cc736cc1bb81269a8ffd0f35190cbf3f089ebf3"
   integrity sha512-3Blh7I+JE7o81XYM3AxqW/udFSS1aissxYEE9jUSfoGWevrvpSSg5ZGz+1XapI99Y4bYMpx7sUcjS2f6OycReQ==
